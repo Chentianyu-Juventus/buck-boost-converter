@@ -21,13 +21,23 @@ As shown in the diagram, the Buck-Boost circuit consists of an IGBT (Sw, the swi
 
 3.Relationship between input and output volatges in the circuits
 
-  (1) Vi*Ton = Vo*Toff
+  (1) Vi * Ton = Vo * Toff
   
   (2) then Vo =  Ton/Toff * Vi = Ton/Ts-Ton * Vi = D/1-D * E
   
 note: D = Ton/Toff is the duty cycle ,by adjusting the duty cycle D:
 The output voltage can be lower than the input voltage (0<D<0.5), functioning as a Buck converter.
 The output voltage can be higher than the input voltage (0.5<D<1), functioning as a Boost converter.
+
+
+4.Relationship Between Input and Output Currents in the Circuit
+
+the input power equals the output power(no losses):
+  (1) Vi * Iin * Ton/Ts = Vo * Io
+  
+from 3(1),(2) , we derive(2) Iin = (1 + Vo/Vi) * Io
+
+5.
   
 
 
