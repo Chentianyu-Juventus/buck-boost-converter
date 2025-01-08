@@ -25,6 +25,7 @@ As shown in the diagram, the Buck-Boost circuit consists of an IGBT (Sw, the swi
 (2)During 𝑇off, the IGBT stops conducting, and the energy stored in the inductor is released to the load through the diode 𝐷.This allows the output voltage 𝑉𝑜to remain continuous, and the circuit completes energy transfer to the load.
 
 
+
 3.Relationship between input and output volatges in the circuits
 
   Vi * Ton = Vo * Toff (1)
@@ -33,7 +34,9 @@ As shown in the diagram, the Buck-Boost circuit consists of an IGBT (Sw, the swi
 
   
 note: D = Ton/Toff is the duty cycle ,by adjusting the duty cycle D:
+
 The output voltage can be lower than the input voltage (0<D<0.5), functioning as a Buck converter.
+
 The output voltage can be higher than the input voltage (0.5<D<1), functioning as a Boost converter.
 
 
@@ -53,7 +56,11 @@ the input power equals the output power(no losses):
 
 
 
+
+
 5.goal:
+
+
 In Continuous Conduction Mode (CCM), with an input DC voltage of 100V and a switching frequency of 100kHz, the requirements are:
 
 Output DC voltage: 43V
@@ -68,7 +75,7 @@ Allowed output voltage ripple: 5%
 
 
 
-5.select D , inductor L and capacitor C
+6.select D , inductor L and capacitor C
 (1) D = Vo / Vi + Vo = 43/100+43 = 0.3  
 
 
