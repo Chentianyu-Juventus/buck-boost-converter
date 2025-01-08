@@ -38,18 +38,37 @@ the input power equals the output power(no losses):
   from(1),(2) , we derive Iin = (1 + Vo/Vi) * Io   (4)
 
 
-5.select od inductor L and capacitor C
-(1)the current ripple  ΔIL in the inductor is calculated as follows
+
+5.goal:
+In Continuous Conduction Mode (CCM), with an input DC voltage of 100V and a switching frequency of 100kHz, the requirements are:
+
+Output DC voltage: 43V
+Output current: 0.86A
+Inductor current ripple: 1.2A
+Allowed output voltage ripple: 5%
+
+
+
+
+
+5.select D , inductor L and capacitor C
+(1) D = Vo / Vi + Vo = 43/100+43 = 0.3  
+
+
+(2)the current ripple  ΔIL in the inductor is calculated as follows
       ΔIL =I Lmax−I Lmin       (5)
 
-(2) inductance L:
+(3) inductance L:
     VL(t) = L * di/dt 
     
     then L = Vi * Ton / ILmax = Vi * Vo / ILmax * f * (Vi+Vo) = Vi * D/ ILmax * f  (6）
+
+         L = 0.86 * 43 / 1.2 * 100 * (100 + 43) = 0.25H
     
-(3) capacitance C:
+    
+(4) capacitance C:
 
     Ic = C * dv / dt 
 
-    then C = Io * Ton / Vo = Io * Vo / Vo * f * (Vi + Vo) = Io * D/Vo * f   (7)
-
+    then C = Io * Ton / Vo = Io * Vo / Vo * f * (Vi + Vo) = Io * D/Vo * f   (7)       
+         C = 0.86 * 43 / 0.05 * 100 * (100 + 43）mF = 0.052mF
