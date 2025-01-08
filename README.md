@@ -21,9 +21,9 @@ As shown in the diagram, the Buck-Boost circuit consists of an IGBT (Sw, the swi
 
 3.Relationship between input and output volatges in the circuits
 
-  (1) Vi * Ton = Vo * Toff
+  Vi * Ton = Vo * Toff (1)
   
-  (2) then Vo =  Ton/Toff * Vi = Ton/Ts-Ton * Vi = D/1-D * E
+  then Vo =  Ton/Toff * Vi = Ton/Ts-Ton * Vi = D/1-D * E (2)
   
 note: D = Ton/Toff is the duty cycle ,by adjusting the duty cycle D:
 The output voltage can be lower than the input voltage (0<D<0.5), functioning as a Buck converter.
@@ -33,11 +33,23 @@ The output voltage can be higher than the input voltage (0.5<D<1), functioning a
 4.Relationship Between Input and Output Currents in the Circuit
 
 the input power equals the output power(no losses):
-  (1) Vi * Iin * Ton/Ts = Vo * Io
+  Vi * Iin * Ton/Ts = Vo * Io  (3)
   
-from 3(1),(2) , we derive(2) Iin = (1 + Vo/Vi) * Io
+  from(1),(2) , we derive Iin = (1 + Vo/Vi) * Io   (4)
 
-5.
-  
 
+5.select od inductor L and capacitor C
+(1)the current ripple  ΔIL in the inductor is calculated as follows
+      ΔIL =I Lmax−I Lmin       (5)
+
+(2) inductance L:
+    VL(t) = L * di/dt 
+    
+    then L = Vi * Ton / ILmax = Vi * Vo / ILmax * f * (Vi+Vo) = Vi * D/ ILmax * f  (6）
+    
+(3) capacitance C:
+
+    Ic = C * dv / dt 
+
+    then C = Io * Ton / Vo = Io * Vo / Vo * f * (Vi + Vo) = Io * D/Vo * f   (7)
 
