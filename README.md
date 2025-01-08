@@ -1,8 +1,20 @@
 # buck-boost-converter
 
+### iverilog
+
+iverilog is the tool used for compiling and simulation purpose. Simulation is the process of creating models that mimic the behavior of the device. Tool performs macro preprocessing, compilation, elaboration, optional optimizations and finally code generation.
+
+* 1.Use following command to install iverilog on Ubuntu machine.
+
+```
+sudo apt install iverilog
+```
+
+* 2.Compile the design files and associated test bench using following command, it produces a executable.
 
 1.Buck-Boost DC/DC Converter:
 The Buck-Boost converter, also known as a step-up/step-down converter, is a type of switching regulator. It is a single-inductor, non-isolated DC-DC converter capable of generating an output voltage that is either lower or higher than the input voltage. The Buck-Boost circuit overcomes the limitations of traditional linear regulators, such as low efficiency, and provides advantages like small size, lightweight, and better adaptability to varying output voltage requirements.
+
 
 
 
