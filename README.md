@@ -26,11 +26,13 @@ As shown in the diagram, the Buck-Boost circuit consists of an IGBT (Sw, the swi
 
 
 
+
 3.Relationship between input and output volatges in the circuits
 
   Vi * Ton = Vo * Toff (1)
   
   then Vo =  Ton/Toff * Vi = Ton/Ts-Ton * Vi = D/1-D * E (2)
+
 
   
 note: D = Ton/Toff is the duty cycle ,by adjusting the duty cycle D:
